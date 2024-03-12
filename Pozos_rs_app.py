@@ -1,7 +1,6 @@
 #importar librerias
 import streamlit as st
 import pandas as pd
-import time
 import plotly.graph_objects as go
 from pycaret.clustering import create_model, assign_model, setup
 
@@ -28,11 +27,7 @@ def main():
     st.write('Este proceso puede llevar unos segundos')
         
     if st.button('AGRUPAR'):
-        my_spinner = st.spinner(text = 'Proceso en Progreso')
-        with my_spinner:
-            for i in range(1,5):
-                time.sleep(1)
-        
+                
         st.subheader('Datos Agrupados')
       
         dataset = assign_model(modelo)
