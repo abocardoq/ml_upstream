@@ -5,4 +5,6 @@ streamlit
 yfinance
 pandas-datareader
 prophet
+time
+plotly
 
