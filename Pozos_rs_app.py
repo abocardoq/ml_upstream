@@ -9,7 +9,7 @@ st.subheader('Agrupación de pozos con características geográficas similares')
 
 # Cargando datos iniciales
 st.subheader('Datos originales')
-coordenadas_pozo_df = pd.read_excel("coordenadas_pozo_rs.xlsx")
+coordenadas_pozo_df = pd.read_csv(r"coordenadas_pozo_rs.csv")
 st.write(coordenadas_pozo_df)
 
 # Entrenando el modelo
