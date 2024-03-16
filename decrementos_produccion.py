@@ -58,8 +58,7 @@ def main():
                          color_discrete_map={'Cluster 2':'blue'})
         st.write(fig)
         
-        
-    
+           
 if __name__ == '__main__':
     main()
     
