@@ -10,7 +10,10 @@ st.subheader('Agrupación de pozos con decrementos de produccion')
 # Cargando datos iniciales
 st.subheader('Datos originales')
 df = pd.read_csv(r"decrementos_produccion.csv")
-df = df.head(30000)
+
+# disminuir el número de registros, ya que streamlit cloud solo acepta 1 GB
+df = df.head(25000)
+
 #df= df[df['FECHA'] == '01/05/2018']
 
 st.write(df)
